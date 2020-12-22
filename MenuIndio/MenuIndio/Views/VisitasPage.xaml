@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MenuIndio.Views.VisitasPage"         
+             Title="{Binding Title}">
+
+   
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="Black" HeightRequest="200">
+                <Image 
+                    Aspect="AspectFill" 
+                    Opacity="0.6" 
+                    Source="https://imgar.zonapropcdn.com/avisos/1/00/42/11/40/76/1200x1200/1570800863.jpg"/>
+                <Label 
+                    Text="Enviar Invitacion !" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    FontSize="52"                    
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center"/>
+            </Grid>                      
+            <Button Text="Enviar por WhatsApp" 
+                    Font="20"
+                    Margin="50,10,50,10"                       
+                    BackgroundColor="#08EB7F" 
+                    ContentLayout="Left,9" 
+                    CornerRadius="60"
+                    Image="ic_invitar.png" 
+                    Clicked="OpenWhatsApp"/>
+            <Image 
+                    Aspect="AspectFill"                     
+                    Source="https://imgar.zonapropcdn.com/avisos/1/00/42/11/40/76/1200x1200/1570800863.jpg"/>
+            <Image 
+                    Aspect="AspectFill" 
+                    Opacity="0.6" 
+                    Source="https://imgar.zonapropcdn.com/avisos/1/00/42/11/40/76/1200x1200/1570800863.jpg"/>            
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
